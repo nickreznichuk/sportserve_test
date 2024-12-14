@@ -1,0 +1,26 @@
+.button {
+  border-radius: 4px;
+  background: #FFF;
+  color: #000;
+  padding: 8px 22px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+
+  &__dark {
+    background: #2F2E2C;
+    color: #FFF;
+  }
+
+  &:hover {
+    background: #6FFF00;
+    color: #000;
+  }
+
+
+}
