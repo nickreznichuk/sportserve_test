@@ -8,7 +8,7 @@ import {IoClose} from "react-icons/io5";
 import classNames from "classnames";
 
 const Header = () => {
-    const [showHamburgerMenu, setShowHamburgerMenu] = useState<boolean>(true)
+    const [showHamburgerMenu, setShowHamburgerMenu] = useState<boolean>(false)
     return (
         <div className={styles.header__wrapper}>
             <header className={styles.header}>
