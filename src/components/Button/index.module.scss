@@ -1,6 +1,6 @@
 .button {
   border-radius: 4px;
-  background: #FFF;
+  background: #fff;
   color: #000;
   padding: 8px 22px;
   border: none;
@@ -13,14 +13,12 @@
   user-select: none;
 
   &__dark {
-    background: #2F2E2C;
-    color: #FFF;
+    background: #2f2e2c;
+    color: #fff;
   }
 
   &:hover {
-    background: #6FFF00;
+    background: #6fff00;
     color: #000;
   }
-
-
 }
