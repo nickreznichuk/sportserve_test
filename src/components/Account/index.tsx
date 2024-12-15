@@ -12,20 +12,11 @@ const Account = () => {
 
   const [showModal, setShowModal] = useState<boolean>(false);
 
-  const lockScroll = React.useCallback(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
-
-  const unlockScroll = React.useCallback(() => {
-    document.body.style.overflow = "";
-  }, []);
   const handleCloseModal = () => {
     setShowModal(false);
-    unlockScroll();
   };
   const handleShowModal = () => {
     setShowModal(true);
-    lockScroll();
   };
 
   return (

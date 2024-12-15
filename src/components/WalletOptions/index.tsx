@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
-import WalletOption from "./WalletOption";
+import WalletOption from "./components/WalletOption";
 import styles from "./index.module.scss";
 import Button from "../Button";
 

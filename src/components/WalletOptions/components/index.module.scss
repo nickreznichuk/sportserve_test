@@ -1,0 +1,36 @@
+.walletOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #eaeaea;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &__name {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    background: #2f2e2c;
+
+    .walletOption__name {
+      color: #fff;
+    }
+  }
+
+  &__active {
+    background: #2f2e2c;
+    .walletOption__name {
+      color: #fff;
+    }
+  }
+}

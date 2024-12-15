@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import Modal from "react-modal";
 import ReactModal from "react-modal";
 import { ComponentType } from "react";
@@ -21,8 +21,21 @@ const ModalComponent = ({
   handleCloseModal,
   title,
 }: TModalComponent) => {
+  const lockScroll = useCallback(() => {
+    document.body.style.overflow = "hidden";
+  }, []);
+
+  const unlockScroll = useCallback(() => {
+    document.body.style.overflow = "";
+  }, []);
+
+  useEffect(() => {
+    isOpen ? lockScroll() : unlockScroll();
+  }, [isOpen]);
+
   return (
     <ModalSafeForReact18
+      ariaHideApp={false}
       isOpen={isOpen}
       onRequestClose={handleCloseModal}
       className={styles.modal}

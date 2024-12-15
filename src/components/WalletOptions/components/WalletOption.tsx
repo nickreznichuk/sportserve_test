@@ -1,9 +1,9 @@
 import { Connector, useAccount } from "wagmi";
 import { useEffect, useState } from "react";
 import * as React from "react";
-import metamaskIcon from "../../assets/wallets/Metamask.svg";
-import walletconnectIcon from "../../assets/wallets/WalletConnect.svg";
-import trustIcon from "../../assets/wallets/TrustWallet.svg";
+import metamaskIcon from "../../../assets/wallets/Metamask.svg";
+import walletconnectIcon from "../../../assets/wallets/WalletConnect.svg";
+import trustIcon from "../../../assets/wallets/TrustWallet.svg";
 import styles from "./index.module.scss";
 import classNames from "classnames";
 
